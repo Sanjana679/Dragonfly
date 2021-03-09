@@ -13,7 +13,7 @@ If you are in a hurry, just clone the repository and follow the [Quick start](ht
 Please cite the following publication if you use *Dragonfly* for your work:
 > Ayyer, K., Lan, T. Y., Elser, V., & Loh, N. D. (2016). Dragonfly: an implementation of the expand–maximize–compress algorithm for single-particle imaging. [*Journal of applied crystallography*, **49**(4), 1320-1335](https://doi.org/10.1107/S1600576716008165).
 
-Get started on psana
+## Get started on psana
 ```
 git clone https://github.com/irischang020/Dragonfly.git
 cd Dragonfly
