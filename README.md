@@ -17,7 +17,8 @@ Please cite the following publication if you use *Dragonfly* for your work:
 ```
 git clone https://github.com/irischang020/Dragonfly.git
 cd Dragonfly
-source /reg/g/psdm/etc/psconda.sh
+source /reg/g/psdm/etc/psconda.sh # python2 (py2 environment is "frozen" so cannot get updated; py2 has been discontinued)
+source /reg/g/psdm/etc/psconda.sh -py3 # python3
 mkdir build
 cd build
 cmake ../
