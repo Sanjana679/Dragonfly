@@ -28,3 +28,17 @@ mkdir ~iris/test_recons
 cd test_recons
 dragonfly_init
 ```
+
+Sanjana's commands
+```
+git clone https://github.com/irischang020/Dragonfly.git
+cd Dragonfly
+source /reg/g/psdm/etc/psconda.sh 
+mkdir build
+cd build
+cmake ..
+make install
+export PATH=/cds/home/n/nand1234/.local/dragonfly/bin:$PATH
+cd ..
+dragonfly_init
+```
