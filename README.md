@@ -50,8 +50,7 @@ cd Dragonfly
 mkdir build
 cd build
 module load cmake/3.20.5
-module load
-gsl
+module load gsl
 module load cray-hdf5
 cmake ..
 make
