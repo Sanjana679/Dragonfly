@@ -42,3 +42,21 @@ export PATH=/cds/home/n/nand1234/.local/dragonfly/bin:$PATH
 cd ..
 dragonfly_init
 ```
+
+## Get started on Cori
+```
+git clone https://github.com/duaneloh/Dragonfly.git
+cd Dragonfly
+mkdir build
+cd build
+module load cmake/3.20.5
+module load
+gsl
+module load cray-hdf5
+cmake ..
+make
+make install
+export PATH=/global/homes/n/nand1234/.local/dragonfly/bin:$PATH #add to .bashrc file
+cd ..
+dragonfly_init
+```
