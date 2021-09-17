@@ -45,17 +45,44 @@ dragonfly_init
 
 ## Get started on Cori
 ```
-git clone https://github.com/duaneloh/Dragonfly.git
+git clone https://github.com/irischang020/Dragonfly.git
 cd Dragonfly
 mkdir build
 cd build
+module load modules/3.2.11.4
+module load intel/19.0.3.199
+module load altd/2.0 module load darshan/3.2.1
+module load craype/2.6.2 
+module load craype-network-aries
+module load cray-libsci/19.06.1
+module load craype-haswell
+module load ugni/6.0.14.0-7.0.1.1_7.59__ge78e5b0.ari         
+module load cray-mpich/7.7.10
+module load pmi/5.0.14
+module load cmake/3.20.5
+module load dmapp/7.1.1-7.0.1.1_4.68__g38cf134.ari           
+module load gsl/2.5
+module load gni-headers/5.0.12.0-7.0.1.1_6.44__g3b1768f.ari  
+module load cray-hdf5/1.10.5.2
+module load xpmem/2.2.20-7.0.1.1_4.26__g0475745.ari
+module load python/3.8-anaconda-2020.11
 module load cmake/3.20.5
 module load gsl
 module load cray-hdf5
+module load job/2.2.4-7.0.1.1_3.53__g36b56f4.ari
+module load dvs/2.12_2.2.167-7.0.1.1_17.9__ge473d3a2
+module load alps/6.6.58-7.0.1.1_6.26__g437d88db.ari
+module load rca/2.2.20-7.0.1.1_4.70__g8e3fb5b.ari
+module load atp/2.1.3
+module load PrgEnv-intel/6.0.5
+module load craype-hugepages2M
+module load atp/2.1.3
+module load cray-libsci/19.06.1 
 cmake ..
 make
 make install
-export PATH=/global/homes/n/nand1234/.local/dragonfly/bin:$PATH #add to .bashrc file
+export PATH=/global/homes/i/ihchang/.local/dragonfly/bin:$PATH #add to .bashrc file
+#export PATH=/global/homes/n/nand1234/.local/dragonfly/bin:$PATH #add to .bashrc file
 cd ..
 dragonfly_init
 ```
