@@ -78,7 +78,8 @@ beta_schedule = 1.41421356 10
 ```
 
 ### Running the Reconstruction
-The command below will run 100 iterations. This can be changed to your liking. 
+The command below will run 100 iterations. This can be changed to your liking by changing the number after -i 
 ```
-./emc 100
+salloc --nodes 4 --qos interactive --time 03:00:00 --constraint haswell
+srun --nodes 4 -c 64 ./utils/run_emc.py -i 100
 ```
