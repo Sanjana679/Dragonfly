@@ -44,6 +44,7 @@ dragonfly_init
 ```
 
 ## Get started on Cori
+Make sure to run this in the scratch folder
 ```
 git clone https://github.com/duaneloh/Dragonfly.git
 cd Dragonfly
@@ -51,7 +52,7 @@ mkdir build
 cd build
 module load cmake/3.20.5
 module load gsl
-module load cray-hdf5
+module load cray-hdf5-parallel
 # Be sure to include the following modules as well
 ![image](https://user-images.githubusercontent.com/25139826/135107198-e9d64b18-f644-4aa3-9388-4423a6593238.png)
 cmake ..
@@ -63,6 +64,7 @@ vim dragonfly_conda.yml
 # - future=0.16.0=py27_1
 # - mpich2=1.4.1p1=0
 conda env create -f dragonfly_conda.yml
+module load openmpi
 cd ..
 dragonfly_init
 ```
