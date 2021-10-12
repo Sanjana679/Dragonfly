@@ -83,3 +83,9 @@ The command below will run 100 iterations. This can be changed to your liking by
 salloc --nodes 4 --qos interactive --time 03:00:00 --constraint haswell
 srun --nodes 4 -c 64 ./utils/run_emc.py -i 100
 ```
+
+## Potential Error
+If you get an error about HDF5 file locking, disable file locking with the following command: 
+```
+export HDF5_USE_FILE_LOCKING=FALSE
+```
