@@ -58,6 +58,11 @@ cmake ..
 make
 make install
 export PATH=/global/homes/n/nand1234/.local/dragonfly/bin:$PATH #add to .bashrc file
+vim dragonfly_conda.yml
+# Remove the following lines from dragonfly_conda.yml
+# - future=0.16.0=py27_1
+# - mpich2=1.4.1p1=0
+conda env create -f dragonfly_conda.yml
 cd ..
 dragonfly_init
 ```
